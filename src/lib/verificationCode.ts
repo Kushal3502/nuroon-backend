@@ -10,6 +10,5 @@ export const generateVerificationCode = async () => {
 };
 
 export const verifyCode = async (code: string, verificationCode: string) => {
-  // return await bcrypt.compare(code, verificationCode);
   return code === verificationCode;
 };
